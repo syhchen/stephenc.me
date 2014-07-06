@@ -1,0 +1,128 @@
+/* Custom "Framework" V.0.1.1 (by Stephen Chen Designs - http://stephenc.me/) */
+/* -------------------------------------------------- */
+
+html, body {
+	margin: 0; padding: 0; border: 0;
+}
+
+h1, h2, h3, h4, h5, h6, div { /* clear header and div formatting */
+	margin: 0; padding: 0; border: 0;
+}
+
+.container {
+    height: 100%; width: 100%;
+    margin: 0; padding: 0;
+    position:relative; /* z-index only works with elements positioned absolute, fixed, or relative */
+}
+
+.container-960 {
+    height: 100%; width: 960px;
+    margin: 0 auto; padding: 0;
+    position:relative; /* z-index only works with elements positioned absolute, fixed, or relative */
+}
+
+/* Site Styles */
+/* -------------------------------------------------- */
+
+html, body {
+    background-color: #262626; color: #1A1A1A; /* backup dark background color */
+    font-family: 'Open Sans Light', 'Open Sans', Helvetica Neue, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased !important; /* affects formatting */
+    -moz-osx-font-smoothing: grayscale; /* affects formatting, no full support */
+}
+
+/* Links */
+a, a:link {
+    color: #ecf0f1;
+}
+
+a:hover {
+    color: #c0cdd0;
+}
+
+/* Header and Navigation */
+#header {
+    height: 40px;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: url(../images/backgrounds/repeating/zwartevilt.png);
+    box-shadow: 0px 0px 5px black; 
+    z-index: 20;
+}
+
+#header-box {
+    font-size: 0px; /* fixes spacing */
+}
+
+#logo {
+    width: 192px; height: 34px; /* 192x40px original resolution */
+    margin: 3px 0;
+    display: inline-block;
+}
+
+#nav-main-container {
+    width: 768px; height: 14px;
+    margin: 16px 0 10px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#nav-links {
+    width: auto; height: auto;
+    margin: 0; padding: 0;
+    text-align: right;
+    font-size: 14px; line-height: 14px;
+    list-style: none;
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#nav-links li {
+    width: 80px; height: 14px;
+    margin: 0 25px; padding: 0;
+    display: inline-block;
+    color: #ecf0f1;
+}
+
+#nav-links li:last-child {
+    margin-left: 60px; /* corrects for extra sizing of the word "contact" */
+    margin-right: 0;
+}
+        
+#nav-links li a, #nav-links li a:link {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+#nav-links li a:hover {
+    color: #c0cdd0;
+}
+
+/*Content*/
+#header-placeholder {
+    height: 40px;
+}
+
+#content-main {
+    height: auto;
+    margin-top: 0; padding: 0; /* original padding: 28px 22px */
+    background: rgba(0, 0, 0, 0.3); color: white;
+    text-align: right;
+    font-size: 0;
+}
+
+#title-right {
+    width: 360px; height: 80px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#title-right p {
+    margin-top: 28px;
+    font-size: 18px; font-weight: bold;
+}
+
+#content-page {
+    text-align: left;
+    display: inline-block;
+}

@@ -1,0 +1,40 @@
+/* Content */
+#background-image {
+    height: 100%;
+    min-width: 960px;
+    background: url(../../images/backgrounds/mind.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+#box-left {
+    width: 560px; height: 1360px;
+    padding: 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-size: 16px;
+}
+
+#box-left ul {
+    margin: 0; padding: 0;
+    list-style: none;
+}
+
+#box-right {
+    width: 320px; height: 1360px;
+    padding: 20px;
+    display: inline-block;
+	position: relative;
+	top: 0;
+    vertical-align: top;
+    text-align: left;
+    overflow: scroll;
+}
+
+#box-right img {
+    width: 220px;
+    margin: 10px 50px;
+}
