@@ -11,7 +11,7 @@
 /* General */
 body {
   font-family: 'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
-  background: #FFF; color: #222;
+  background: #F1F1F1; color: #222;
 }
 .container {
   width: 1024px;
@@ -34,12 +34,16 @@ body {
   .container-full;
 
   height: @header-height;
+  padding-top: 20px;
   line-height: @header-height;
-  text-align: center;
-  background: #333;
+  text-align: left;
+
+  section {
+    .container;
+  }
 }
-.letterhead {
-  width: 320px;
+.logo {
+  width: 120px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -48,22 +52,24 @@ body {
   position: absolute;
   top: 0; right: 0;
   font-size: 28px;
+  text-align: center;
   color: #FFF;
 }
-/* ul.navlist {
+ul.navlist {
   position: absolute;
   right: 0;
   display: inline-block;
 
   li {
-    margin-left: 30px;
+    margin-left: 40px;
     display: inline-block;
     font-size: 18px;
     letter-spacing: 2px;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    color: #444;
 
     &:hover {
       color: @theme-yellow;
     }
   }
-} */
+}
