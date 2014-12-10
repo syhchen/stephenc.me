@@ -148,6 +148,19 @@ body {
   position: relative;
   display: block;
 }
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.borderbox {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /* Header */
 .header {
   width: 100%;
@@ -155,8 +168,13 @@ body {
   margin: 0 auto;
   position: relative;
   display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   height: 110px;
-  padding-top: 20px;
   line-height: 110px;
   text-align: left;
 }
@@ -170,7 +188,25 @@ body {
 .logo {
   width: 120px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: bottom;
+}
+ul.navlist {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ul.navlist li {
+  margin-left: 40px;
+  display: inline-block;
+  line-height: 18px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
+ul.navlist li a {
+  text-decoration: none;
+  color: #444;
 }
 .menuicon {
   width: 121px;
@@ -182,19 +218,81 @@ body {
   text-align: center;
   color: #FFF;
 }
-ul.navlist {
+/* Content */
+.macbook {
+  width: 100%;
+  margin-top: 55px;
+  font-size: .92px;
+  /* use font-size to scale graphic */
+  position: relative;
+}
+.macbook .lid {
+  width: 800em;
+  height: 480em;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 30em 30em 0 0;
+  background: #CCC;
+}
+.macbook .lid .bezel {
+  width: 782em;
+  height: 472em;
   position: absolute;
-  right: 0;
-  display: inline-block;
+  right: 9em;
+  bottom: 0;
+  left: 9em;
+  border-radius: 30em 30em 0 0;
+  background: #000;
 }
-ul.navlist li {
-  margin-left: 40px;
+.macbook .lid .bezel .screen {
+  width: 720em;
+  height: 405em;
+  position: absolute;
+  top: 35em;
+  right: 31em;
+  background: #333;
+}
+.macbook .lid .bezel .screen .screen-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 15px;
+  line-height: 35px;
+  color: #EEE;
+}
+.macbook .lid .bezel .screen .screen-content .prop {
+  width: 110px;
   display: inline-block;
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-weight: bold;
+  color: #FFF;
+}
+.macbook .lid .bezel .screen .screen-content a {
+  text-decoration: none;
+  color: #3A92C8;
+}
+.macbook .base {
+  width: 1000em;
+  height: 28em;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 0 0 12em 12em;
+  background: #CCC;
+}
+.macbook .base .groove {
+  width: 170em;
+  height: 12em;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 0 0 12em 12em;
+  background: #b3b3b3;
+}
+.title {
+  width: 100%;
+  margin-top: 55px;
+  text-align: center;
   text-transform: uppercase;
-  color: #444;
-}
-ul.navlist li:hover {
-  color: #fdd040;
+  font-size: 32px;
+  letter-spacing: 3px;
 }
