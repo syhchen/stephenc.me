@@ -14,9 +14,9 @@
       <section>
         <img src="img/weblogo.png" alt="Stephen Chen" class="logo">
         <ul class="navlist">
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#work">Work</a></li>
+          <!-- <li><a href="#about" id="aboutlink">About</a></li> -->
+          <li><a href="http://stephenc.me/resume.pdf" id="resumelink">Resume</a></li>
+          <li><a href="https://github.com/SCDevy" id="worklink">Work</a></li>
         </ul>
         <!-- <div class="menuicon">&#9776;</div> -->
       </section>
@@ -48,6 +48,27 @@
         </div>
         <div class="title">Stephen Chen. Developer. Designer.</div>
       </section>
+      <section class="resume" id="resume">
+
+      </section>
     </section>
+
+    <!-- SCRIPTS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    function scrollTo(link, target) {
+      link.click(function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: target.offset().top - 10
+        }, 800);
+      });
+    }
+
+    // scrollTo($('#aboutlink'), $('#about'));
+    // scrollTo($('#resumelink'), $('#resume'));
+    // scrollTo($('#worklink'), $('#work'));
+    </script>
   </body>
 </html>
