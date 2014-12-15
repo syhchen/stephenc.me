@@ -136,6 +136,17 @@ body {
   background: #F1F1F1;
   color: #444;
 }
+.section-divider {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  display: block;
+  height: 1px;
+  margin: 60px auto;
+  border: none;
+  background: #DDD;
+}
 .container {
   width: 1024px;
   margin: 0 auto;
@@ -178,6 +189,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   height: 110px;
+  padding-bottom: 60px;
   line-height: 110px;
   text-align: left;
 }
@@ -239,7 +251,7 @@ body {
   display: block;
 }
 .content .about {
-  margin-top: 60px;
+  padding-bottom: 60px;
 }
 .content .about .title {
   width: 100%;
@@ -251,66 +263,105 @@ body {
   letter-spacing: 4px;
 }
 .content .resume {
+  width: 100%;
+  min-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #EBEBEB;
+}
+.content .resume section {
   width: 720px;
-  margin-top: 55px;
 }
-.content .resume > h2 {
-  margin-bottom: 20px;
+.content .resume section > h2 {
+  margin-bottom: 25px;
   text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #5A5A5A;
 }
-.content .resume > hr {
-  margin-bottom: 20px;
+.content .resume section > hr {
+  height: 1px;
+  margin-bottom: 50px;
+  border: none;
+  background: #D3D3D3;
 }
-.content .resume > ul > li {
-  margin-bottom: 40px;
+.content .resume section > ul > li {
+  margin-bottom: 70px;
   letter-spacing: 0.5px;
 }
-.content .resume > ul > li > div {
+.content .resume section > ul > li > div {
   margin-bottom: 20px;
   position: relative;
 }
-.content .resume > ul .icon {
+.content .resume section > ul .icon {
   width: 64px;
   height: 64px;
   position: absolute;
   left: -64px;
-  border: 1px solid #EEE;
   border-radius: 32px;
   line-height: 64px;
   background: #FFF;
 }
-.content .resume > ul .icon img {
+.content .resume section > ul .icon a {
+  text-decoration: none;
+  color: inherit;
+}
+.content .resume section > ul .icon img {
   width: 44px;
   padding: 0 10px;
   display: inline-block;
   vertical-align: middle;
 }
-.content .resume > ul .name {
+.content .resume section > ul .name {
   font-weight: 600;
 }
-.content .resume > ul .date {
+.content .resume section > ul .name a {
+  text-decoration: none;
+  color: inherit;
+}
+.content .resume section > ul .date {
   position: absolute;
   right: 0;
 }
-.content .resume > ul .position {
+.content .resume section > ul .position {
   font-weight: 600;
 }
-.content .resume > ul .location {
+.content .resume section > ul .hackathon {
+  font-weight: 700;
+}
+.content .resume section > ul .hackathon .prize {
+  font-weight: 300;
+  font-style: italic;
+}
+.content .resume section > ul .location {
   position: absolute;
   right: 0;
 }
-.content .resume > ul .description ul {
+.content .resume section > ul .description {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.content .resume section > ul .description ul.list {
   list-style: disc;
 }
-.content .resume > ul .description ul li {
-  margin: 10px 0 10px 20px;
+.content .resume section > ul .description ul.list li {
+  margin-left: 20px;
 }
-.content .resume > ul .skills span {
-  margin-right: 10px;
+.content .resume section > ul .skills span {
+  margin: 0 10px 10px 0;
   padding: 6px 12px;
   display: inline-block;
   border: 1px solid #444;
-  border-radius: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 /* Graphics */
 /* ----------------------------------------------------- */

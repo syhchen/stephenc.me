@@ -10,12 +10,21 @@
 @header-height: 110px;
 @page-width: 1024px;
 @page-padding: 20px;
+@section-padding: 60px;
 
 /* General */
 /* ----------------------------------------------------- */
 body {
   font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #F1F1F1; color: #444;
+}
+.section-divider {
+  .container;
+
+  height: 1px;
+  margin: @section-padding auto;
+  border: none;
+  background: #DDD;
 }
 .container {
   width: @page-width;
@@ -51,6 +60,7 @@ body {
   .noselect;
 
   height: @header-height;
+  padding-bottom: @section-padding;
   line-height: @header-height;
   text-align: left;
 
@@ -101,7 +111,7 @@ body {
     .container;
   }
   .about {
-    margin-top: 60px;
+    padding-bottom: @section-padding;
 
     .title {
       width: 100%;
@@ -114,73 +124,107 @@ body {
     }
   }
   .resume {
-    width: 720px;
-    margin-top: 55px;
+    .container-full;
 
-    >h2 {
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
+    padding-top: @section-padding; padding-bottom: @section-padding;
+    background: #EBEBEB;
 
-    >hr {
-      margin-bottom: 20px;
-    }
+    section {
+      width: 720px;
 
-    >ul {
-
-      >li {
-        margin-bottom: 40px;
-        letter-spacing: 0.5px;
-
-        >div {
-          margin-bottom: 20px;
-          position: relative;
-        }
-      }
-      .icon {
-        width: 64px; height: 64px;
-        position: absolute;
-        left: -64px;
-        border: 1px solid #EEE;
-        border-radius: 32px;
-        line-height: 64px;
-        background: #FFF;
-
-        img {
-          width: 44px;
-          padding: 0 10px;
-          display: inline-block;
-          vertical-align: middle;
-        }
-      }
-      .name {
+      >h2 {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-size: 14px;
         font-weight: 600;
+        letter-spacing: 4px;
+        color: #5A5A5A;
       }
-      .date {
-        position: absolute;
-        right: 0;
+
+      >hr {
+        height: 1px;
+        margin-bottom: 50px;
+        border: none;
+        background: #D3D3D3;
       }
-      .position {
-        font-weight: 600;
-      }
-      .location {
-        position: absolute;
-        right: 0;
-      }
-      .description {
-        ul {
-          list-style: disc;
-          li {
-            margin: 10px 0 10px 20px;
+
+      >ul {
+
+        >li {
+          margin-bottom: 70px;
+          letter-spacing: 0.5px;
+
+          >div {
+            margin-bottom: 20px;
+            position: relative;
           }
         }
-      }
-      .skills {
-        span {
-          margin-right: 10px; padding: 6px 12px;
-          display: inline-block;
-          border: 1px solid #444;
-          border-radius: 4px;
+        .icon {
+          width: 64px; height: 64px;
+          position: absolute;
+          left: -64px;
+          border-radius: 32px;
+          line-height: 64px;
+          background: #FFF;
+
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+          img {
+            width: 44px;
+            padding: 0 10px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        .name {
+          font-weight: 600;
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+        .date {
+          position: absolute;
+          right: 0;
+        }
+        .position {
+          font-weight: 600;
+        }
+        .hackathon {
+          font-weight: 700;
+          .prize {
+            font-weight: 300;
+            font-style: italic;
+          }
+        }
+        .location {
+          position: absolute;
+          right: 0;
+        }
+        .description {
+          margin-top: 40px; margin-bottom: 30px;
+          font-weight: 300;
+          line-height: 28px;
+          letter-spacing: 1px;
+
+          ul.list {
+            list-style: disc;
+            li {
+              margin-left: 20px;
+            }
+          }
+        }
+        .skills {
+          span {
+            margin: 0 10px 10px 0; padding: 6px 12px;
+            display: inline-block;
+            border: 1px solid #444;
+            border-radius: 2px;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
         }
       }
     }
