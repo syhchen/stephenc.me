@@ -128,22 +128,24 @@ table {
 /* Author: Stephen Chen 2014 */
 /* ========================================================================= */
 /* Variables */
+/* ----------------------------------------------------- */
 /* General */
+/* ----------------------------------------------------- */
 body {
-  font-family: 'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #F1F1F1;
   color: #444;
 }
 .container {
   width: 1024px;
-  min-width: 768px;
   margin: 0 auto;
+  padding: 0 20px;
   position: relative;
   display: block;
 }
 .container-full {
   width: 100%;
-  min-width: 768px;
+  min-width: 1024px;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -162,9 +164,10 @@ body {
   box-sizing: border-box;
 }
 /* Header */
+/* ----------------------------------------------------- */
 .header {
   width: 100%;
-  min-width: 768px;
+  min-width: 1024px;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -180,35 +183,36 @@ body {
 }
 .header section {
   width: 1024px;
-  min-width: 768px;
   margin: 0 auto;
+  padding: 0 20px;
   position: relative;
   display: block;
 }
-.logo {
+.header .logo {
   width: 120px;
   display: inline-block;
   vertical-align: bottom;
 }
-ul.navlist {
+.header ul.navlist {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
 }
-ul.navlist li {
+.header ul.navlist li {
   margin-left: 40px;
   display: inline-block;
   line-height: 18px;
   font-size: 18px;
+  font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   vertical-align: bottom;
 }
-ul.navlist li a {
+.header ul.navlist li a {
   text-decoration: none;
   color: #444;
 }
-.menuicon {
+.header .menuicon {
   width: 121px;
   height: 110px;
   position: absolute;
@@ -219,16 +223,104 @@ ul.navlist li a {
   color: #FFF;
 }
 /* Content */
-.about {
+/* ----------------------------------------------------- */
+.content {
+  width: 100%;
+  min-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+.content section {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  display: block;
+}
+.content .about {
+  margin-top: 60px;
+}
+.content .about .title {
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.content .resume {
+  width: 720px;
   margin-top: 55px;
 }
+.content .resume > h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.content .resume > hr {
+  margin-bottom: 20px;
+}
+.content .resume > ul > li {
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+.content .resume > ul > li > div {
+  margin-bottom: 20px;
+  position: relative;
+}
+.content .resume > ul .icon {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: -64px;
+  border: 1px solid #EEE;
+  border-radius: 32px;
+  line-height: 64px;
+  background: #FFF;
+}
+.content .resume > ul .icon img {
+  width: 44px;
+  padding: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.content .resume > ul .name {
+  font-weight: 600;
+}
+.content .resume > ul .date {
+  position: absolute;
+  right: 0;
+}
+.content .resume > ul .position {
+  font-weight: 600;
+}
+.content .resume > ul .location {
+  position: absolute;
+  right: 0;
+}
+.content .resume > ul .description ul {
+  list-style: disc;
+}
+.content .resume > ul .description ul li {
+  margin: 10px 0 10px 20px;
+}
+.content .resume > ul .skills span {
+  margin-right: 10px;
+  padding: 6px 12px;
+  display: inline-block;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+/* Graphics */
+/* ----------------------------------------------------- */
 .macbook {
   width: 100%;
-  font-size: .92px;
+  font-size: .90px;
   /* use font-size to scale graphic */
   position: relative;
 }
-.macbook .lid {
+.macbook > .lid {
   width: 800em;
   height: 480em;
   margin: 0 auto;
@@ -236,7 +328,7 @@ ul.navlist li a {
   border-radius: 30em 30em 0 0;
   background: #CCC;
 }
-.macbook .lid .bezel {
+.macbook > .lid > .bezel {
   width: 782em;
   height: 472em;
   position: absolute;
@@ -246,7 +338,7 @@ ul.navlist li a {
   border-radius: 30em 30em 0 0;
   background: #000;
 }
-.macbook .lid .bezel .screen {
+.macbook > .lid > .bezel > .screen {
   width: 720em;
   height: 405em;
   position: absolute;
@@ -254,27 +346,27 @@ ul.navlist li a {
   right: 31em;
   background: #333;
 }
-.macbook .lid .bezel .screen .screen-content {
+.macbook > .lid > .bezel > .screen > .screen-content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 8px 20px;
   font-family: "Source Code Pro", monospace;
   font-size: 15px;
   line-height: 35px;
   color: #EEE;
 }
-.macbook .lid .bezel .screen .screen-content .prop {
+.macbook > .lid > .bezel > .screen > .screen-content > .prop {
   width: 110px;
   display: inline-block;
   font-weight: bold;
   color: #FFF;
 }
-.macbook .lid .bezel .screen .screen-content a {
+.macbook > .lid > .bezel > .screen > .screen-content > a {
   text-decoration: none;
   color: #3A92C8;
 }
-.macbook .base {
+.macbook > .base {
   width: 1000em;
   height: 28em;
   margin: 0 auto;
@@ -282,22 +374,11 @@ ul.navlist li a {
   border-radius: 0 0 12em 12em;
   background: #CCC;
 }
-.macbook .base .groove {
+.macbook > .base > .groove {
   width: 170em;
   height: 12em;
   margin: 0 auto;
   position: relative;
   border-radius: 0 0 12em 12em;
   background: #b3b3b3;
-}
-.title {
-  width: 100%;
-  margin-top: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 32px;
-  letter-spacing: 3px;
-}
-.resume {
-  margin-top: 55px;
 }
