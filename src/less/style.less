@@ -12,30 +12,17 @@
 @page-padding: 20px;
 @section-padding: 60px;
 
-/* General */
+/* Classes */
 /* ----------------------------------------------------- */
-body {
-  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  background: #F1F1F1; color: #444;
-}
-.section-divider {
-  .container;
-
-  height: 1px;
-  margin: @section-padding auto;
-  border: none;
-  background: #DDD;
-}
 .container {
   width: @page-width;
-  margin: 0 auto; padding: 0 @page-padding;
+  margin: 0 auto;
   position: relative;
   display: block;
 }
 .container-full {
   width: 100%;
-  min-width: @page-width;
+  min-width: @page-width+2*@page-padding;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -54,6 +41,14 @@ body {
   box-sizing: border-box;
 }
 
+/* General */
+/* ----------------------------------------------------- */
+body {
+  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: #F1F1F1; color: #444;
+}
+
 /* Header */
 /* ----------------------------------------------------- */
 .header {
@@ -65,7 +60,7 @@ body {
   line-height: @header-height;
   text-align: left;
 
-  section {
+  >section {
     .container;
   }
   .logo {
@@ -75,9 +70,9 @@ body {
   }
   ul.navlist {
     position: absolute;
-    top: 0; right: @page-padding;
+    top: 0; right: 0;
 
-    li {
+    >li {
       margin-left: 40px;
       display: inline-block;
       line-height: 18px;
@@ -108,7 +103,9 @@ body {
 .content {
   .container-full;
 
-  section {
+  max-height: 999999px; /* fix for font boosting */
+
+  >section {
     margin: 0 auto;
     position: relative;
   }
@@ -116,7 +113,6 @@ body {
     padding-bottom: @section-padding;
 
     .title {
-      width: 100%;
       margin-top: 60px;
       text-align: center;
       text-transform: uppercase;
@@ -127,12 +123,13 @@ body {
   }
   .resume {
     width: 100%;
-
     padding-top: @section-padding; padding-bottom: 10px;
     background: #EBEBEB;
 
     section {
       width: 720px;
+      margin: 0 auto;
+      position: relative;
 
       >h2 {
         margin-bottom: 25px;
@@ -228,7 +225,7 @@ body {
   .projects {
     .container-full;
 
-    padding-top: @section-padding; padding-bottom: @section-padding;
+    padding-top: @section-padding;
 
     section {
       .container;
@@ -319,7 +316,7 @@ body {
   }
   .socialmedia {
     position: absolute;
-    top: 0; right: @page-padding;
+    top: 0; right: 0;
 
     a {
       margin-left: 20px;
@@ -360,10 +357,10 @@ body {
         >.screen-content {
           .borderbox;
 
-          padding: 8px 20px;
+          padding: 30px 20px;
           font-family: "Source Code Pro", monospace;
-          font-size: 15px;
-          line-height: 35px;
+          font-size: 16px;
+          line-height: 38px;
           color: #EEE;
 
           >.prop {

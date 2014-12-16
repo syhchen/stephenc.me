@@ -129,35 +129,17 @@ table {
 /* ========================================================================= */
 /* Variables */
 /* ----------------------------------------------------- */
-/* General */
+/* Classes */
 /* ----------------------------------------------------- */
-body {
-  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  background: #F1F1F1;
-  color: #444;
-}
-.section-divider {
-  width: 1024px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-  display: block;
-  height: 1px;
-  margin: 60px auto;
-  border: none;
-  background: #DDD;
-}
 .container {
   width: 1024px;
   margin: 0 auto;
-  padding: 0 20px;
   position: relative;
   display: block;
 }
 .container-full {
   width: 100%;
-  min-width: 1024px;
+  min-width: 1064px;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -175,11 +157,19 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* General */
+/* ----------------------------------------------------- */
+body {
+  font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: #F1F1F1;
+  color: #444;
+}
 /* Header */
 /* ----------------------------------------------------- */
 .header {
   width: 100%;
-  min-width: 1024px;
+  min-width: 1064px;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -194,10 +184,9 @@ body {
   line-height: 110px;
   text-align: left;
 }
-.header section {
+.header > section {
   width: 1024px;
   margin: 0 auto;
-  padding: 0 20px;
   position: relative;
   display: block;
 }
@@ -209,9 +198,9 @@ body {
 .header ul.navlist {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 0;
 }
-.header ul.navlist li {
+.header ul.navlist > li {
   margin-left: 40px;
   display: inline-block;
   line-height: 18px;
@@ -221,7 +210,7 @@ body {
   text-transform: uppercase;
   vertical-align: bottom;
 }
-.header ul.navlist li a {
+.header ul.navlist > li a {
   text-decoration: none;
   color: #444;
 }
@@ -239,12 +228,14 @@ body {
 /* ----------------------------------------------------- */
 .content {
   width: 100%;
-  min-width: 1024px;
+  min-width: 1064px;
   margin: 0 auto;
   position: relative;
   display: block;
+  max-height: 999999px;
+  /* fix for font boosting */
 }
-.content section {
+.content > section {
   margin: 0 auto;
   position: relative;
 }
@@ -252,7 +243,6 @@ body {
   padding-bottom: 60px;
 }
 .content .about .title {
-  width: 100%;
   margin-top: 60px;
   text-align: center;
   text-transform: uppercase;
@@ -268,6 +258,8 @@ body {
 }
 .content .resume section {
   width: 720px;
+  margin: 0 auto;
+  position: relative;
 }
 .content .resume section > h2 {
   margin-bottom: 25px;
@@ -353,17 +345,15 @@ body {
 }
 .content .projects {
   width: 100%;
-  min-width: 1024px;
+  min-width: 1064px;
   margin: 0 auto;
   position: relative;
   display: block;
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 .content .projects section {
   width: 1024px;
   margin: 0 auto;
-  padding: 0 20px;
   position: relative;
   display: block;
 }
@@ -430,7 +420,7 @@ body {
 /* ----------------------------------------------------- */
 .footer {
   width: 100%;
-  min-width: 1024px;
+  min-width: 1064px;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -440,7 +430,6 @@ body {
 .footer section {
   width: 1024px;
   margin: 0 auto;
-  padding: 0 20px;
   position: relative;
   display: block;
 }
@@ -454,7 +443,7 @@ body {
 .footer .socialmedia {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 0;
 }
 .footer .socialmedia a {
   margin-left: 20px;
@@ -502,10 +491,10 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 8px 20px;
+  padding: 30px 20px;
   font-family: "Source Code Pro", monospace;
-  font-size: 15px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 38px;
   color: #EEE;
 }
 .macbook > .lid > .bezel > .screen > .screen-content > .prop {
