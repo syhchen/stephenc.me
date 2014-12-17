@@ -59,6 +59,7 @@ body {
   position: absolute;
   line-height: @header-height;
   text-align: left;
+  z-index: 99;
 
   >section {
     .container;
@@ -125,7 +126,7 @@ body {
   .resume {
     width: 100%;
     padding-top: @section-padding; padding-bottom: 10px;
-    background: rgba(235, 235, 235, 0.75);
+    background: rgba(235, 235, 235, 0.5);
 
     >section {
       width: 720px;
@@ -293,7 +294,7 @@ body {
           position: relative;
           line-height: 28px;
           letter-spacing: 1px;
-          border-left: 1px solid #EAEAEA;
+          border-left: 1px solid #F1F1F1;
 
           .title {
             margin-bottom: 14px;
@@ -302,6 +303,10 @@ body {
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
           }
         }
         .event {

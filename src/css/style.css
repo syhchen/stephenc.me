@@ -183,6 +183,7 @@ body {
   position: absolute;
   line-height: 110px;
   text-align: left;
+  z-index: 99;
 }
 .header > section {
   width: 1024px;
@@ -255,7 +256,7 @@ body {
   width: 100%;
   padding-top: 60px;
   padding-bottom: 10px;
-  background: rgba(235, 235, 235, 0.75);
+  background: rgba(235, 235, 235, 0.5);
 }
 .content .resume > section {
   width: 720px;
@@ -419,7 +420,7 @@ body {
   position: relative;
   line-height: 28px;
   letter-spacing: 1px;
-  border-left: 1px solid #EAEAEA;
+  border-left: 1px solid #F1F1F1;
 }
 .content .projects ul.feed > li .description .title {
   margin-bottom: 14px;
@@ -428,6 +429,10 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+.content .projects ul.feed > li .description .title a {
+  text-decoration: none;
+  color: inherit;
 }
 .content .projects ul.feed > li .event {
   position: absolute;
