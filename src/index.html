@@ -163,13 +163,13 @@
                 <span class="frontend">CSS</span>
                 <span class="frontend">JavaScript</span>
                 <span class="frontend">JQuery</span>
+                <span class="design">Illustrator</span>
+                <span class="design">Photoshop</span>
                 <span class="softskill">Leadership</span>
                 <span class="softskill">Mentorship</span>
                 <span class="softskill">Operations</span>
                 <span class="softskill">Finance</span>
                 <span class="softskill">Fundraising</span>
-                <span class="design">Illustrator</span>
-                <span class="design">Photoshop</span>
               </div>
             </li>
             <li>
@@ -272,6 +272,7 @@
 
     <!-- SCRIPTS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/js/parallax.min.js"></script>
     <script>
     function scrollTo(link, target) {
       link.click(function(e) {
@@ -286,6 +287,8 @@
     scrollTo($('#aboutlink'), $('#about'));
     scrollTo($('#resumelink'), $('#resume'));
     scrollTo($('#projectslink'), $('#projects'));
+
+    $('.content').parallax({imageSrc: '/img/background.jpg'});
     </script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

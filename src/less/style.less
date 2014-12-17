@@ -56,7 +56,7 @@ body {
   .noselect;
 
   height: @header-height;
-  padding-bottom: @section-padding;
+  position: absolute;
   line-height: @header-height;
   text-align: left;
 
@@ -104,6 +104,7 @@ body {
   .container-full;
 
   max-height: 999999px; /* fix for font boosting */
+  padding-top: @header-height+@section-padding;
 
   >section {
     margin: 0 auto;
@@ -124,7 +125,7 @@ body {
   .resume {
     width: 100%;
     padding-top: @section-padding; padding-bottom: 10px;
-    background: #EBEBEB;
+    background: rgba(235, 235, 235, 0.75);
 
     >section {
       width: 720px;
@@ -214,19 +215,24 @@ body {
             margin: 0 10px 10px 0; padding: 6px 12px;
             display: inline-block;
             border: 1px solid #444;
-            border-radius: 2px;
+            border-radius: 4px;
             font-size: 12px;
             text-transform: uppercase;
 
             &.frontend {
+              border-color: #2980B9;
             }
             &.backend {
+              border-color: #2980B9;
             }
             &.devtool {
+              border-color: #2980B9;
             }
             &.design {
+              border-color: #B67972;
             }
             &.softskill {
+              border-color: #468966;
             }
           }
         }
