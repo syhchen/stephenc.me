@@ -256,12 +256,12 @@ body {
   padding-bottom: 10px;
   background: #EBEBEB;
 }
-.content .resume section {
+.content .resume > section {
   width: 720px;
   margin: 0 auto;
   position: relative;
 }
-.content .resume section > h2 {
+.content .resume > section > h2 {
   margin-bottom: 25px;
   text-transform: uppercase;
   font-size: 14px;
@@ -269,21 +269,21 @@ body {
   letter-spacing: 4px;
   color: #5A5A5A;
 }
-.content .resume section > hr {
+.content .resume > section > hr {
   height: 1px;
   margin-bottom: 50px;
   border: none;
   background: #D3D3D3;
 }
-.content .resume section > ul > li {
+.content .resume > section > ul > li {
   margin-bottom: 70px;
   letter-spacing: 0.5px;
 }
-.content .resume section > ul > li > div {
+.content .resume > section > ul > li > div {
   margin-bottom: 20px;
   position: relative;
 }
-.content .resume section > ul .icon {
+.content .resume > section > ul .icon {
   width: 64px;
   height: 64px;
   margin-top: -6px;
@@ -293,48 +293,48 @@ body {
   line-height: 64px;
   background: #FFF;
 }
-.content .resume section > ul .icon a {
+.content .resume > section > ul .icon a {
   text-decoration: none;
   color: inherit;
 }
-.content .resume section > ul .icon img {
+.content .resume > section > ul .icon img {
   width: 44px;
   padding: 0 10px;
   display: inline-block;
   vertical-align: middle;
 }
-.content .resume section > ul .name {
+.content .resume > section > ul .name {
   font-weight: 600;
 }
-.content .resume section > ul .name a {
+.content .resume > section > ul .name a {
   text-decoration: none;
   color: inherit;
 }
-.content .resume section > ul .date {
+.content .resume > section > ul .date {
   position: absolute;
   right: 0;
 }
-.content .resume section > ul .position {
+.content .resume > section > ul .position {
   font-weight: 600;
 }
-.content .resume section > ul .location {
+.content .resume > section > ul .location {
   position: absolute;
   right: 0;
 }
-.content .resume section > ul .description {
+.content .resume > section > ul .description {
   margin-top: 40px;
   margin-bottom: 30px;
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 1px;
 }
-.content .resume section > ul .description ul.list {
+.content .resume > section > ul .description ul.list {
   list-style: disc;
 }
-.content .resume section > ul .description ul.list li {
+.content .resume > section > ul .description ul.list > li {
   margin-left: 20px;
 }
-.content .resume section > ul .skills span {
+.content .resume > section > ul .skills > span {
   margin: 0 10px 10px 0;
   padding: 6px 12px;
   display: inline-block;
@@ -371,6 +371,9 @@ body {
   border: none;
   background: #D3D3D3;
 }
+.content .projects ul.feed {
+  padding-bottom: 20px;
+}
 .content .projects ul.feed > li {
   width: 100%;
   height: 200px;
@@ -396,11 +399,11 @@ body {
   box-sizing: border-box;
   height: 200px;
   margin-left: 320px;
-  padding: 20px 22px;
+  padding: 20px;
   position: relative;
   line-height: 28px;
   letter-spacing: 1px;
-  border-left: 1px solid #DDDDDD;
+  border-left: 1px solid #EAEAEA;
 }
 .content .projects ul.feed > li .description .title {
   margin-bottom: 14px;
@@ -431,7 +434,7 @@ body {
   height: 80px;
   background: #EBEBEB;
 }
-.footer section {
+.footer > section {
   width: 1024px;
   margin: 0 auto;
   position: relative;
@@ -439,7 +442,7 @@ body {
 }
 .footer .copyright {
   position: absolute;
-  top: 32px;
+  bottom: -48px;
   left: 0;
   font-size: 12px;
   font-weight: 300;
@@ -448,7 +451,7 @@ body {
 }
 .footer .socialmedia {
   position: absolute;
-  top: 32px;
+  bottom: -48px;
   right: 0;
 }
 .footer .socialmedia a {
