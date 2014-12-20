@@ -434,6 +434,9 @@ body {
   text-decoration: none;
   color: inherit;
 }
+.content .projects ul.feed > li .description .role {
+  font-weight: 600;
+}
 .content .projects ul.feed > li .event {
   position: absolute;
   right: 20px;
