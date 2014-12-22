@@ -391,9 +391,26 @@ body {
 .content .projects ul.feed {
   padding-bottom: 20px;
 }
+.content .projects ul.feed .x16x10 {
+  height: 200px;
+}
+.content .projects ul.feed .x16x10 .image {
+  height: 200px;
+}
+.content .projects ul.feed .x16x10 .description {
+  height: 200px;
+}
+.content .projects ul.feed .x4x3 {
+  height: 213px;
+}
+.content .projects ul.feed .x4x3 .image {
+  height: 213px;
+}
+.content .projects ul.feed .x4x3 .description {
+  height: 213px;
+}
 .content .projects ul.feed > li {
   width: 100%;
-  height: 200px;
   margin-bottom: 20px;
   position: relative;
   border: 1px solid;
@@ -403,7 +420,6 @@ body {
 }
 .content .projects ul.feed > li .image {
   width: 320px;
-  height: 200px;
   position: absolute;
   overflow: hidden;
 }
@@ -414,7 +430,6 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 200px;
   margin-left: 320px;
   padding: 20px;
   position: relative;
