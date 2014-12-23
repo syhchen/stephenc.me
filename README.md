@@ -1,1 +1,1 @@
-Developer and designer - Stephen Chen . http://stephenc.me/
+I'm Stephen Chen, a developer and designer based in Los Angeles, CA. http://stephenc.me/

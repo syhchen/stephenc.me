@@ -20,6 +20,7 @@
       this.showImageNumberLabel        = true;
       this.alwaysShowNavOnTouchDevices = false;
       this.wrapAround                  = false;
+      this.canScroll                   = false;
     }
     
     // Change to localize to non-english language
@@ -42,6 +43,14 @@
     Lightbox.prototype.init = function() {
       this.enable();
       this.build();
+    };
+
+    // Block user scroll
+    // Just if 'canScroll' = false
+    Lightbox.prototype.hasScroll = function() {
+      if(!this.options.canScroll) {
+        $('body').toggleClass('lightbox-active');
+      }
     };
 
     // Loop through anchors and areamaps looking for either data-lightbox attributes or rel attributes
@@ -121,6 +130,8 @@
       var self    = this;
       var $window = $(window);
 
+      self.hasScroll();
+
       $window.on('resize', $.proxy(this.sizeOverlay, this));
 
       $('select, object, embed').css({
@@ -168,8 +179,11 @@
       }
       
       // Position Lightbox
-      var top  = $window.scrollTop() + this.options.positionFromTop;
+      var positionUnit = String(this.options.positionFromTop).split('%');
+      var windowPecentage = $window.height() / 100;
+      var top  = ((positionUnit.length > 1) ? windowPecentage * parseInt(positionUnit[0]) + $window.scrollTop() : $window.scrollTop() + parseInt(positionUnit[0]));
       var left = $window.scrollLeft();
+
       this.$lightbox.css({
         top: top + 'px',
         left: left + 'px'
@@ -391,6 +405,7 @@
     // Closing time. :-(
     Lightbox.prototype.end = function() {
       this.disableKeyboardNav();
+      this.hasScroll();
       $(window).off("resize", this.sizeOverlay);
       this.$lightbox.fadeOut(this.options.fadeDuration);
       this.$overlay.fadeOut(this.options.fadeDuration);
