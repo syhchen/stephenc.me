@@ -505,34 +505,31 @@ body {
 /* ----------------------------------------------------- */
 .macbook {
   width: 100%;
-  font-size: .90px;
-  /* use font-size to scale graphic */
   position: relative;
 }
 .macbook > .lid {
-  width: 800em;
-  height: 480em;
+  width: 720px;
+  height: 432px;
   margin: 0 auto;
   position: relative;
-  border-radius: 30em 30em 0 0;
+  border-radius: 27px 27px 0 0;
   background: #CCC;
 }
 .macbook > .lid > .bezel {
-  width: 782em;
-  height: 472em;
-  position: absolute;
-  right: 9em;
-  bottom: 0;
-  left: 9em;
-  border-radius: 30em 30em 0 0;
+  width: 705.6px;
+  height: 424.8px;
+  margin: 0 auto;
+  position: relative;
+  top: 7.2px;
+  border-radius: 27px 27px 0 0;
   background: #000;
 }
 .macbook > .lid > .bezel > .screen {
-  width: 720em;
-  height: 405em;
-  position: absolute;
-  top: 35em;
-  right: 31em;
+  width: 649.8px;
+  height: 361.8px;
+  margin: 0 auto;
+  position: relative;
+  top: 31.5px;
   background: #333;
 }
 .macbook > .lid > .bezel > .screen > .screen-content {
@@ -556,18 +553,18 @@ body {
   color: #3A92C8;
 }
 .macbook > .base {
-  width: 1000em;
-  height: 28em;
+  width: 900px;
+  height: 25px;
   margin: 0 auto;
   position: relative;
-  border-radius: 0 0 12em 12em;
+  border-radius: 0 0 10.8px 10.8px;
   background: #CCC;
 }
 .macbook > .base > .groove {
-  width: 170em;
-  height: 12em;
+  width: 153px;
+  height: 10.8px;
   margin: 0 auto;
   position: relative;
-  border-radius: 0 0 12em 12em;
+  border-radius: 0 0 10.8px 10.8px;
   background: #b3b3b3;
 }

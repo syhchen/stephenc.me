@@ -382,28 +382,48 @@ body {
 
 /* Graphics */
 /* ----------------------------------------------------- */
+@lid-width: @base-width*.8;
+@lid-height: @base-width*.48;
+@bezel-spacing: @base-width*.008;
+@bezel-width: @lid-width - 2*@bezel-spacing;
+@bezel-height: @lid-height - @bezel-spacing;
+@screen-spacing: @base-width*.035;
+@screen-width: @bezel-width - 2*@base-width*.031;
+@screen-height: @bezel-height - 2*@screen-spacing;
+@lid-radius: @base-width*.03;
+
+@base-width: 900px;
+@base-height: @base-width/36;
+@groove-width: @base-width*.17;
+@groove-height: @base-width*.012;
+@base-radius: @base-width*.012;
+
+
+
+
 .macbook {
   width: 100%;
-  font-size: .90px; /* use font-size to scale graphic */
   position: relative;
 
   >.lid {
-    width: 800em; height: 480em;
+    width: @lid-width; height: @lid-height;
     margin: 0 auto;
     position: relative;
-    border-radius: 30em 30em 0 0;
+    border-radius: @lid-radius @lid-radius 0 0;
     background: #CCC;
 
     >.bezel {
-      width: 782em; height: 472em;
-      position: absolute;
-      right: 9em; bottom: 0; left: 9em;
-      border-radius: 30em 30em 0 0;
+      width: @bezel-width; height: @bezel-height;
+      margin: 0 auto;
+      position: relative;
+      top: @bezel-spacing;
+      border-radius: @lid-radius @lid-radius 0 0;
       background: #000;
       >.screen {
-        width: 720em; height: 405em;
-        position: absolute;
-        top: 35em; right: 31em;
+        width: @screen-width; height: @screen-height;
+        margin: 0 auto;
+        position: relative;
+        top: @screen-spacing;
         background: #333;
         >.screen-content {
           .borderbox;
@@ -429,17 +449,17 @@ body {
     }
   }
   >.base {
-    width: 1000em; height: 28em;
+    width: @base-width; height: @base-height;
     margin: 0 auto;
     position: relative;
-    border-radius: 0 0 12em 12em;
+    border-radius: 0 0 @base-radius @base-radius;
     background: #CCC;
 
     >.groove {
-      width: 170em; height: 12em;
+      width: @groove-width; height: @groove-height;
       margin: 0 auto;
       position: relative;
-      border-radius: 0 0 12em 12em;
+      border-radius: 0 0 @base-radius @base-radius;
       background: #b3b3b3;
     }
   }
