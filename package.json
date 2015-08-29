@@ -1,6 +1,6 @@
 {
   "name": "stephenc.me",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Developer and designer - Stephen Chen.",
   "main": "app.js",
   "scripts": {
@@ -14,5 +14,17 @@
   "bugs": {
     "url": "https://github.com/SCDevy/stephenc.me/issues"
   },
-  "homepage": "https://github.com/SCDevy/stephenc.me"
+  "homepage": "https://github.com/SCDevy/stephenc.me",
+  "dependencies": {
+      "gulp": "*",
+      "gulp-plumber": "*",
+      "gulp-rename": "*",
+      "gulp-autoprefixer": "*",
+      "gulp-concat": "*",
+      "gulp-jshint": "*",
+      "gulp-uglify": "*",
+      "gulp-minify-css": "*",
+      "gulp-less": "*",
+      "browser-sync": "*"
+  }
 }
