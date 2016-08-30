@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    {{ if eq .URL "/" }}
+    <title>{{ .Title }} | UI/UX and Product Designer</title>
+    <meta property='og:title' content="{{ .Title }} | UI/UX and Product Designer">
+    <meta property="og:type" content="website">
+    {{ else }}
+
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <meta property='og:title' content="{{ .Title }} | {{ .Site.Title }}">
+    <meta property="og:type" content="article">
+    {{ end }}
+
+    <meta name="description" content="Hi, I'm Stephen! I’m a UI/UX and Product Designer currently studying at USC.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: import font -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div class="sc-header">
+      <nav class="sc-container sc-nav">
+        <ul>
+          <li class="selected"><a href="">Work</a></li>
+          <li><a href="stephenchenresume.pdf" target="_blank">Resume</a></li> <!-- TODO: template resume link -->
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="sc-container sc-headline">
+      <h1 class="sc-title">Hi, I&rsquo;m Stephen!</h1>
+      <p class="sc-subtitle">I&rsquo;m a <strong>UI/UX</strong> and <strong>Product Designer</strong> currently studying at <strong>USC</strong>.</p>
+      <h2 class="sc-section-name">Work &amp; Projects</h2>
+    </section>
+    <section class="pure-g sc-container work">
+      {{ range first 10 .Data.Pages }}
+      <div class="pure-u-1-3 sc-card-container">
+        <div class="sc-card">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      </div>
+      {{ end }}
+    </section>
+  </body>
+</html>

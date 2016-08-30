@@ -1,0 +1,4 @@
+baseurl = "http://stephenc.me/"
+languageCode = "en-us"
+title = "Stephen Chen"
+theme = "stephenc.me"

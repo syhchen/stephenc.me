@@ -1,0 +1,115 @@
+/* General */
+html, body {
+  min-width: 1024px; /* TODO: mobile responsiveness */
+  font-family: Apercu Pro; /* TODO: import font to project */
+  font-size: 16px;
+  background: #f8f9fa;
+  color: #5f5f5f;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+}
+h1 {
+  font-size: 2.369em;
+}
+h2 {
+  font-size: 1.777em;
+}
+h3, h4, h5, h6 {
+  font-size: 1.333em;
+}
+.sc-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; padding: 0 40px;
+  position: relative;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Header */
+.sc-header {
+  height: 96px;
+  line-height: 96px;
+  font-size: 0;
+  text-align: center;
+}
+.sc-nav {
+  display: inline-block;
+  font-size: 16px; /* reset to base value */
+  text-align: right;
+  text-transform: uppercase;
+  line-height: normal;
+  vertical-align: middle;
+}
+.sc-nav>ul {
+  margin: 0; padding: 0;
+  list-style: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.sc-nav>ul>li {
+  margin-left: 30px;
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-align: right;
+  letter-spacing: 1px;
+}
+.sc-nav>ul>li.selected {
+  text-decoration: underline;
+}
+.sc-nav>ul>li>a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Headline */
+.sc-headline>.sc-title {
+  position: relative;
+  letter-spacing: 0.0938em;
+  z-index: 99;
+}
+.sc-headline>.sc-subtitle {
+  position: relative;
+  margin: 0 0 60px 0;
+  font-size: 1.333em;
+  letter-spacing: 0.0625em;
+  z-index: 99;
+}
+.sc-headline>.sc-section-name {
+  margin: 0;
+  position: absolute;
+  right: 40px; bottom: -12px; /* right: container padding, bottom: baseline differences */
+  font-size: 4.209em;
+  text-transform: uppercase;
+  vertical-align: text-bottom;
+  color: #f2f2f2;
+  z-index: 1;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Cards */
+.sc-card-container {
+  padding: 10px;
+}
+.sc-card {
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+  background: #fff;
+  color: #4a4a4a;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
