@@ -2,28 +2,20 @@
 <html>
   <head>
     {{ partial "head.html" . }}
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
   </head>
   <body>
-    <div class="background"></div>
-    <!-- TODO: break header and headline into partials? -->
-    <div class="sc-header">
-      <nav class="sc-container sc-nav">
-        <ul>
-          <li class="selected"><a href="">Work</a></li>
-          <li><a href="{{ .Site.Params.resumeurl }}" target="_blank">Resume</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    {{ partial "header.html" . }}
+
     <section class="sc-container sc-headline">
       <h1 class="sc-title">Hi, I&rsquo;m Stephen.</h1>
       <p class="sc-subtitle">I&rsquo;m a <strong>Software Engineer</strong> turned <strong>Product Designer</strong> studying at <strong>USC</strong>.</p>
       <h2 class="sc-section-name">Work &amp; Projects</h2>
     </section>
+
     <section class="pure-g sc-container work">
       {{ range .Data.Pages }}
+      {{ if eq .Type "project" }}
       <div class="pure-u-1-3 sc-card-container">
         <a href="{{ .Permalink }}" class="sc-card">
           <div style="background-image: url('{{ .Params.thumbnail }}');" class="sc-img"></div>
@@ -33,6 +25,7 @@
           </div>
         </a>
       </div>
+      {{ end }}
       {{ end }}
     </section>
 

@@ -2,19 +2,19 @@
 <meta charset="utf-8">
 <!-- TODO: favicon -->
 {{ if eq .URL "/" }}
-<title>{{ .Title }} | Product and UI/UX Designer</title>
-<meta property='og:title' content="{{ .Title }} | Product and UI/UX Designer">
+<title>{{ .Site.Title }} | Product and UI/UX Designer</title>
+<meta property='og:title' content="{{ .Site.Title }} | Product and UI/UX Designer">
 <meta property="og:type" content="website">
 {{ else }}
-<title>{{ .Title }} | {{ .Site.Title }}</title>
-<meta property='og:title' content="{{ .Title }} | {{ .Site.Title }}">
+<title>{{ .Site.Title }} | {{ .Title }}</title>
+<meta property='og:title' content="{{ .Site.Title }} | {{ .Title }}">
 <meta property="og:type" content="article">
 {{ end }}
-<meta name="description" content="Hi, I'm Stephen! I’m a Software Engineer turned Product Designer studying at USC.">
+<meta name="description" content="Hi, I'm Stephen! I'm a Software Engineer turned Product Designer studying at USC.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- TODO: import font -->
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 <!-- TODO: Open Graph info, including preview image -->

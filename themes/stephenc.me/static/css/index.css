@@ -1,10 +1,1 @@
-.background {
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background-image: url("../img/background_beta.gif");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  opacity: 0.01;
-  z-index: 0;
-}
+

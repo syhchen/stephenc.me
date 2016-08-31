@@ -6,9 +6,10 @@
   <body>
     {{ partial "header.html" . }}
 
-    <section class="pure-g sc-container">
-
-    </section>
+    <div class="sc-container">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </div>
 
     {{ partial "footer.html" . }}
   </body>
