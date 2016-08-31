@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+    <div class="background"></div>
+    <!-- TODO: break header and headline into partials? -->
     <div class="sc-header">
       <nav class="sc-container sc-nav">
         <ul>
@@ -16,12 +18,12 @@
       </nav>
     </div>
     <section class="sc-container sc-headline">
-      <h1 class="sc-title">Hi, I&rsquo;m Stephen!</h1>
-      <p class="sc-subtitle">I&rsquo;m a <strong>UI/UX</strong> and <strong>Product Designer</strong> currently studying at <strong>USC</strong>.</p>
+      <h1 class="sc-title">Hi, I&rsquo;m Stephen.</h1>
+      <p class="sc-subtitle">I&rsquo;m an <strong>Engineer</strong> turned <strong>Product Designer</strong> currently studying at <strong>USC</strong>.</p>
       <h2 class="sc-section-name">Work &amp; Projects</h2>
     </section>
     <section class="pure-g sc-container work">
-      {{ range first 10 .Data.Pages }}
+      {{ range .Data.Pages }}
       <div class="pure-u-1-3 sc-card-container">
         <a href="{{ .Permalink }}" class="sc-card">
           <div style="background-image: url('{{ .Params.thumbnail }}');" class="sc-img"></div>

@@ -4,4 +4,10 @@ baseurl = "http://stephenc.me/"
 title = "Stephen Chen"
 
 [params]
+  currentyear = "2016"
   resumeurl = "stephenchenresume.pdf"
+  githuburl = "a"
+  mediumurl = "a"
+  twitterurl = "b"
+  soundcloudurl = "b"
+  linkedinurl = "c"

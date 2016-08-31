@@ -1,10 +1,10 @@
 +++
 date = "2016-08-30T13:04:06-07:00"
-title = "TechLA"
-draft = true
+title = "TechLA | Web UI"
+draft = false
 description = "Product design, design research, UI development, product management"
-thumbnail = "img/screenshot/soundtable.png"
-weight = 0
+thumbnail = "img/thumbnail/techla.png"
+weight = 1
 +++
 
 I worked on **TechLA** over **Summer 2016**. An awesome project funded by **Upfront Ventures**.

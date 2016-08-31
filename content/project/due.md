@@ -1,8 +1,8 @@
 +++
 date = "2016-08-30T13:49:38-07:00"
-title = "Due"
-draft = true
+title = "Due | Web & Mobile UI"
+draft = false
 description = "Product design, design research"
-thumbnail = "img/screenshot/soundtable.png"
-weight = 0
+thumbnail = "img/thumbnail/due.png"
+weight = 3
 +++

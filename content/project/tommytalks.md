@@ -1,8 +1,8 @@
 +++
 date = "2016-08-30T20:12:58-07:00"
-title = "Tommy Talks Website"
+title = "Tommy Talks | Website"
 draft = false
-description = "Product design, design research, graphic design, product management"
+description = "Web design"
 thumbnail = "img/thumbnail/tommytalks.png"
-weight = 0
+weight = 8
 +++
