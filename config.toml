@@ -1,4 +1,7 @@
-baseurl = "http://stephenc.me/"
-languageCode = "en-us"
-title = "Stephen Chen"
 theme = "stephenc.me"
+languageCode = "en-us"
+baseurl = "http://stephenc.me/"
+title = "Stephen Chen"
+
+[params]
+  resumeurl = "stephenchenresume.pdf"
