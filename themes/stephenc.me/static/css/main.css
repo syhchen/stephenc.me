@@ -23,6 +23,13 @@ p {
   margin: 0 0 10px 0;
   letter-spacing: 0.0625em;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
 .sc-container {
   width: 100%;
   max-width: 1200px;
