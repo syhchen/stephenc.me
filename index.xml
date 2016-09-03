@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stephen Chen</title>
+    <link>http://stephenc.me/</link>
+    <description>Recent content on Stephen Chen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 Aug 2016 13:34:19 -0700</lastBuildDate>
+    <atom:link href="http://stephenc.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://stephenc.me/about/</link>
+      <pubDate>Wed, 31 Aug 2016 13:34:19 -0700</pubDate>
+      
+      <guid>http://stephenc.me/about/</guid>
+      <description>&lt;p&gt;Previously, I&amp;rsquo;ve worked at &lt;a href=&#34;https://www.playstation.com/en-us/corporate/about/&#34;&gt;&lt;strong&gt;Sony Interactive Entertainment&lt;/strong&gt;&lt;/a&gt; and at &lt;a href=&#34;http://pndr.co/&#34;&gt;&lt;strong&gt;Ponder&lt;/strong&gt;&lt;/a&gt;, designing and building digital products. Currently, I&amp;rsquo;m leading a small product team to launch &lt;a href=&#34;http://tech.la/&#34;&gt;&lt;strong&gt;TechLA&lt;/strong&gt;&lt;/a&gt;, an internships platform for Los Angeles startups backed by &lt;a href=&#34;http://upfront.com/&#34;&gt;&lt;strong&gt;Upfront Ventures&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At USC I cofounded &lt;a href=&#34;https://www.facebook.com/GoSparkSC&#34;&gt;&lt;strong&gt;Spark SC&lt;/strong&gt;&lt;/a&gt; – we believe in connecting and empowering passionate student entrepreneurs and makers on campus, through initiatives like &lt;a href=&#34;http://sparksc.org/events/1000-pitches.html&#34;&gt;1000 Pitches&lt;/a&gt; and &lt;a href=&#34;http://sparksc.org/events/startup-career-fair.html&#34;&gt;Startup Career Fair&lt;/a&gt;. I also helped found &lt;a href=&#34;https://www.facebook.com/USCHackers/&#34;&gt;&lt;strong&gt;USC Hackers&lt;/strong&gt;&lt;/a&gt;, where I directed branding and design and also organized weekly &lt;a href=&#34;https://www.facebook.com/groups/uschacknights/&#34;&gt;Hack Nights&lt;/a&gt;. I really enjoy teaching, and I&amp;rsquo;ve mentored and led workshops on design and web development as an instructor at &lt;a href=&#34;http://hacksc.com/&#34;&gt;&lt;strong&gt;HackSC&lt;/strong&gt;&lt;/a&gt; and as a teaching assistant at the &lt;a href=&#34;http://viterbi.usc.edu/&#34;&gt;&lt;strong&gt;USC Viterbi School of Engineering&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When I&amp;rsquo;m not designing, coding, or experimenting with pourover coffee, I can sometimes be found playing shows in the city with &lt;a href=&#34;http://bazaarensemble.bandcamp.com/releases&#34;&gt;&lt;strong&gt;Bazaar Ensemble&lt;/strong&gt;&lt;/a&gt;. I write and perform original music, some of which you can find on my &lt;a href=&#34;https://soundcloud.com/stephenchenmusic/sets/my-recordings&#34;&gt;&lt;strong&gt;SoundCloud&lt;/strong&gt;&lt;/a&gt;. I also love photography – I showcase my client work on &lt;a href=&#34;https://www.facebook.com/stephenchenphotography/&#34;&gt;&lt;strong&gt;Facebook&lt;/strong&gt;&lt;/a&gt; and occasionally chronicle my adventures over on &lt;a href=&#34;https://www.instagram.com/scdevy/&#34;&gt;&lt;strong&gt;Instagram&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Want to say hi? Get in touch at &lt;a href=&#34;mailto:hello@stephenc.me&#34;&gt;&lt;strong&gt;hello@stephenc.me&lt;/strong&gt;&lt;/a&gt; or shoot me a &lt;a href=&#34;https://twitter.com/SCDevy&#34;&gt;&lt;strong&gt;tweet&lt;/strong&gt;&lt;/a&gt;! I&amp;rsquo;m also available for freelance work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TechLA | Web UI</title>
+      <link>http://stephenc.me/project/techla/</link>
+      <pubDate>Tue, 30 Aug 2016 13:04:06 -0700</pubDate>
+      
+      <guid>http://stephenc.me/project/techla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sonder | Logo &amp; Mobile UI</title>
+      <link>http://stephenc.me/project/sonder/</link>
+      <pubDate>Tue, 30 Aug 2016 16:57:55 -0700</pubDate>
+      
+      <guid>http://stephenc.me/project/sonder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Due | Web &amp; Mobile UI</title>
+      <link>http://stephenc.me/project/due/</link>
+      <pubDate>Tue, 30 Aug 2016 13:49:38 -0700</pubDate>
+      
+      <guid>http://stephenc.me/project/due/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yelp Recipes | UI Concept</title>
+      <link>http://stephenc.me/project/yelp/</link>
+      <pubDate>Tue, 30 Aug 2016 19:55:52 -0700</pubDate>
+      
+      <guid>http://stephenc.me/project/yelp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ponder | Photo Picker UI</title>
+      <link>http://stephenc.me/project/ponder/</link>
+      <pubDate>Tue, 30 Aug 2016 20:12:49 -0700</pubDate>
+      
+      <guid>http://stephenc.me/project/ponder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>USC Hackers | Brand</title>
+      <link>http://stephenc.me/project/uschackers/</link>
+      <pubDate>Tue, 30 Aug 2016 19:56:07 -0700</pubDate>
+      
+      <guid>http://stephenc.me/project/uschackers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SoundTable | Virtual Space</title>
+      <link>http://stephenc.me/project/soundtable/</link>
+      <pubDate>Tue, 30 Aug 2016 20:51:14 -0700</pubDate>
+      
+      <guid>http://stephenc.me/project/soundtable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tommy Talks | Website</title>
+      <link>http://stephenc.me/project/tommytalks/</link>
+      <pubDate>Tue, 30 Aug 2016 20:12:58 -0700</pubDate>
+      
+      <guid>http://stephenc.me/project/tommytalks/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+.content p {
+  margin-bottom: 20px;
+  line-height: 1.777em;
+}
+.profpic-container {
+  text-align: center;
+}
+.profpic {
+  width: 270px; height: 270px;
+  margin-right: 25px;
+  display: inline-block;
+  border-radius: 270px;
+  background-image: url("../img/stephenchen/profpic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
