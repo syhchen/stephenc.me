@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stephen Chen</title>
-    <link>http://stephenc.me/</link>
+    <link>http://scdevy.github.io/stephenc.me/</link>
     <description>Recent content on Stephen Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 31 Aug 2016 13:34:19 -0700</lastBuildDate>
-    <atom:link href="http://stephenc.me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://scdevy.github.io/stephenc.me/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>
-      <link>http://stephenc.me/about/</link>
+      <link>http://scdevy.github.io/stephenc.me/about/</link>
       <pubDate>Wed, 31 Aug 2016 13:34:19 -0700</pubDate>
       
-      <guid>http://stephenc.me/about/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/about/</guid>
       <description>&lt;p&gt;Previously, I&amp;rsquo;ve worked at &lt;a href=&#34;https://www.playstation.com/en-us/corporate/about/&#34;&gt;&lt;strong&gt;Sony Interactive Entertainment&lt;/strong&gt;&lt;/a&gt; and at &lt;a href=&#34;http://pndr.co/&#34;&gt;&lt;strong&gt;Ponder&lt;/strong&gt;&lt;/a&gt;, designing and building digital products. Currently, I&amp;rsquo;m leading a small product team to launch &lt;a href=&#34;http://tech.la/&#34;&gt;&lt;strong&gt;TechLA&lt;/strong&gt;&lt;/a&gt;, an internships platform for Los Angeles startups backed by &lt;a href=&#34;http://upfront.com/&#34;&gt;&lt;strong&gt;Upfront Ventures&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;At USC I cofounded &lt;a href=&#34;https://www.facebook.com/GoSparkSC&#34;&gt;&lt;strong&gt;Spark SC&lt;/strong&gt;&lt;/a&gt; – we believe in connecting and empowering passionate student entrepreneurs and makers on campus, through initiatives like &lt;a href=&#34;http://sparksc.org/events/1000-pitches.html&#34;&gt;1000 Pitches&lt;/a&gt; and &lt;a href=&#34;http://sparksc.org/events/startup-career-fair.html&#34;&gt;Startup Career Fair&lt;/a&gt;. I also helped found &lt;a href=&#34;https://www.facebook.com/USCHackers/&#34;&gt;&lt;strong&gt;USC Hackers&lt;/strong&gt;&lt;/a&gt;, where I directed branding and design and also organized weekly &lt;a href=&#34;https://www.facebook.com/groups/uschacknights/&#34;&gt;Hack Nights&lt;/a&gt;. I really enjoy teaching, and I&amp;rsquo;ve mentored and led workshops on design and web development as an instructor at &lt;a href=&#34;http://hacksc.com/&#34;&gt;&lt;strong&gt;HackSC&lt;/strong&gt;&lt;/a&gt; and as a teaching assistant at the &lt;a href=&#34;http://viterbi.usc.edu/&#34;&gt;&lt;strong&gt;USC Viterbi School of Engineering&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -27,73 +27,73 @@
     
     <item>
       <title>TechLA | Web UI</title>
-      <link>http://stephenc.me/project/techla/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/techla/</link>
       <pubDate>Tue, 30 Aug 2016 13:04:06 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/techla/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/techla/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sonder | Logo &amp; Mobile UI</title>
-      <link>http://stephenc.me/project/sonder/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/sonder/</link>
       <pubDate>Tue, 30 Aug 2016 16:57:55 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/sonder/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/sonder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Due | Web &amp; Mobile UI</title>
-      <link>http://stephenc.me/project/due/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/due/</link>
       <pubDate>Tue, 30 Aug 2016 13:49:38 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/due/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/due/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yelp Recipes | UI Concept</title>
-      <link>http://stephenc.me/project/yelp/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/yelp/</link>
       <pubDate>Tue, 30 Aug 2016 19:55:52 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/yelp/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/yelp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ponder | Photo Picker UI</title>
-      <link>http://stephenc.me/project/ponder/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/ponder/</link>
       <pubDate>Tue, 30 Aug 2016 20:12:49 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/ponder/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/ponder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>USC Hackers | Brand</title>
-      <link>http://stephenc.me/project/uschackers/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/uschackers/</link>
       <pubDate>Tue, 30 Aug 2016 19:56:07 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/uschackers/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/uschackers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SoundTable | Virtual Space</title>
-      <link>http://stephenc.me/project/soundtable/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/soundtable/</link>
       <pubDate>Tue, 30 Aug 2016 20:51:14 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/soundtable/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/soundtable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tommy Talks | Website</title>
-      <link>http://stephenc.me/project/tommytalks/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/tommytalks/</link>
       <pubDate>Tue, 30 Aug 2016 20:12:58 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/tommytalks/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/tommytalks/</guid>
       <description></description>
     </item>
     

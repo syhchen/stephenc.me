@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Stephen Chen</title>
-    <link>http://stephenc.me/project/</link>
+    <link>http://scdevy.github.io/stephenc.me/project/</link>
     <description>Recent content in Projects on Stephen Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Aug 2016 13:04:06 -0700</lastBuildDate>
-    <atom:link href="http://stephenc.me/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://scdevy.github.io/stephenc.me/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>TechLA | Web UI</title>
-      <link>http://stephenc.me/project/techla/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/techla/</link>
       <pubDate>Tue, 30 Aug 2016 13:04:06 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/techla/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/techla/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sonder | Logo &amp; Mobile UI</title>
-      <link>http://stephenc.me/project/sonder/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/sonder/</link>
       <pubDate>Tue, 30 Aug 2016 16:57:55 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/sonder/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/sonder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Due | Web &amp; Mobile UI</title>
-      <link>http://stephenc.me/project/due/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/due/</link>
       <pubDate>Tue, 30 Aug 2016 13:49:38 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/due/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/due/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Yelp Recipes | UI Concept</title>
-      <link>http://stephenc.me/project/yelp/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/yelp/</link>
       <pubDate>Tue, 30 Aug 2016 19:55:52 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/yelp/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/yelp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ponder | Photo Picker UI</title>
-      <link>http://stephenc.me/project/ponder/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/ponder/</link>
       <pubDate>Tue, 30 Aug 2016 20:12:49 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/ponder/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/ponder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>USC Hackers | Brand</title>
-      <link>http://stephenc.me/project/uschackers/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/uschackers/</link>
       <pubDate>Tue, 30 Aug 2016 19:56:07 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/uschackers/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/uschackers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SoundTable | Virtual Space</title>
-      <link>http://stephenc.me/project/soundtable/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/soundtable/</link>
       <pubDate>Tue, 30 Aug 2016 20:51:14 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/soundtable/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/soundtable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tommy Talks | Website</title>
-      <link>http://stephenc.me/project/tommytalks/</link>
+      <link>http://scdevy.github.io/stephenc.me/project/tommytalks/</link>
       <pubDate>Tue, 30 Aug 2016 20:12:58 -0700</pubDate>
       
-      <guid>http://stephenc.me/project/tommytalks/</guid>
+      <guid>http://scdevy.github.io/stephenc.me/project/tommytalks/</guid>
       <description></description>
     </item>
     
