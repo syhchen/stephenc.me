@@ -2,6 +2,7 @@ theme = "stephenc.me"
 languageCode = "en-us"
 baseurl = "http://stephenc.me/"
 title = "Stephen Chen"
+canonifyurls = true
 
 [params]
   currentyear = "2016"
