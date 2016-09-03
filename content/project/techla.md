@@ -6,5 +6,3 @@ description = "Product design, design research, branding, software engineering, 
 thumbnail = "img/thumbnail/techla.png"
 weight = 1
 +++
-
-I worked on **TechLA** over **Summer 2016**. An awesome project funded by **Upfront Ventures**.
