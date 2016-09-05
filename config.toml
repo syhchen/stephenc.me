@@ -1,6 +1,6 @@
 theme = "stephenc.me"
 languageCode = "en-us"
-baseurl = "http://scdevy.github.io/stephenc.me/"
+baseurl = "http://stephenc.me/"
 title = "Stephen Chen"
 canonifyurls = true
 
