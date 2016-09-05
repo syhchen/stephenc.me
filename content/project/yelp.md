@@ -4,5 +4,5 @@ title = "Yelp Recipes | UI Concept"
 draft = false
 description = "Product design"
 thumbnail = "img/thumbnail/yelp.png"
-weight = 4
+weight = 3
 +++

@@ -4,5 +4,5 @@ title = "Due | Web & Mobile UI"
 draft = false
 description = "Product design, design research"
 thumbnail = "img/thumbnail/due.png"
-weight = 3
+weight = 4
 +++

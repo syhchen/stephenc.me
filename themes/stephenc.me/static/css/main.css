@@ -1,7 +1,22 @@
+@font-face{
+  font-family:'Apercu Pro';
+  src: url('apercu_pro/apercu_regular_pro.otf');
+}
+@font-face{
+  font-family:'Apercu Pro';
+  src: url('apercu_pro/apercu_bold_pro.otf');
+  font-weight: bold;
+}
+@font-face{
+  font-family:'Apercu Pro';
+  src: url('apercu_pro/apercu_regular_italic_pro.otf');
+  font-style: italic;
+}
+
 /* General */
 html, body {
-  min-width: 1024px; /* TODO: mobile responsiveness */
-  font-family: Apercu Pro; /* TODO: import font to project */
+  min-width: 1128px; /* TODO: mobile responsiveness */
+  font-family: 'Apercu Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   background: #f8f9fa;
   color: #5f5f5f;
@@ -163,6 +178,7 @@ a:hover {
   height: 70px;
   margin-top: 240px; padding: 20px 25px 0 25px;
   border-top: 1px solid rgba(0,0,0,0.07);
+  overflow: hidden;
 }
 .sc-card>.sc-content>.sc-title {
   margin-bottom: 5px;
