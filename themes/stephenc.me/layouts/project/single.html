@@ -2,16 +2,25 @@
 <html>
   <head>
     {{ partial "head.html" . }}
+    <link rel="stylesheet" href="/css/project.css">
   </head>
   <body>
-    {{ partial "header.html" . }}
+    <div class="sc-banner">
+        <div class="sc-background"></div>
+        {{ partial "header.html" . }}
 
-    <div class="sc-container">
-      <h1>{{ .Title }}</h1>
+        <div class="sc-container">
+        <h1 class="sc-title">{{ .Title }}</h1>
+        <p class="sc-subtitle">{{ .Params.oneliner }}</p>
+        </div>
+    </div>
 
-      <pi>Page is currently under construction. &#9785; In the meantime, check out my temporary portfolio on <strong><a href="https://www.behance.net/SCDevy">Behance</a></strong>!</pi>
+    <div class="sc-project-content">
+        <div class="sc-container">
+            <pi>Page is currently under construction. &#9785; In the meantime, check out my temporary portfolio on <strong><a href="https://www.behance.net/SCDevy">Behance</a></strong>!</pi>
 
-      {{ .Content }}
+            {{ .Content }}
+        </div>
     </div>
 
     {{ partial "footer.html" . }}

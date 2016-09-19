@@ -1,5 +1,3 @@
-<div class="sc-background"></div>
-
 <div class="sc-header">
   <nav class="sc-container sc-nav">
     <ul>
@@ -11,7 +9,7 @@
         <a href="{{ .Site.BaseURL }}">Work</a>
       </li>
       <li>
-        <a href="{{ .Site.Params.resumeurl }}" target="_blank">Resume</a>
+        <a href="/{{ .Site.Params.resumeurl }}" target="_blank">Resume</a>
       </li>
       {{ if in .Permalink "/about" }}
       <li class="selected">
