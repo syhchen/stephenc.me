@@ -1,0 +1,9 @@
+# project
+*.min.css
+
+# npm
+/node_modules
+npm-debug.log
+
+# system
+.DS_Store
