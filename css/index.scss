@@ -1,5 +1,24 @@
 @import 'var';
+@import 'core';
 
 body {
 	font-family: $font-stack;
+}
+
+.sc-header {
+	padding-top: 80px; padding-bottom: 80px;
+}
+.hero {
+	padding: 20px 0 160px;
+}
+.content {
+	height: 400px;
+	background: #eee;
+}
+.cta {
+	padding: 120px 0;
+	text-align: center;
+}
+.cta button {
+	margin-top: 24px;
 }
