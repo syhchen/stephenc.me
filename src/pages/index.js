@@ -32,8 +32,9 @@ class BlogIndex extends React.Component {
                       </div>
                       <div className={styles.projectInfo}>
                         <h2>{post.node.frontmatter.title}</h2>
-                        <small>{post.node.frontmatter.date}</small>
-                        <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+                        <p>Filler text.</p>
+                        {/* <small>{post.node.frontmatter.date}</small>
+                        <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} /> */}
                       </div>
                     </Link>
                   </div>
