@@ -1,0 +1,37 @@
+@import '../components/_var';
+
+.portfolioOuter {
+    position: relative;
+    top: -60px;
+    width: 100%;
+    max-width: @page-max-width;
+    margin: 0 auto;
+    padding: 6px 12px;
+    background: white;
+}
+.portfolioInner {
+    display: flex;
+    margin: 0 -6px;
+}
+
+.projectCard {
+    flex: 1 0;
+    margin: 6px;
+    box-shadow: 0px 2px 20px rgba(0,0,0,0.12);
+    background: white;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.projectThumb {
+    height: 280px;
+    background: white;
+}
+.projectInfo {
+    height: 120px;
+    padding: 0 24px;
+    border-top: 1px solid @concrete;
+    background: white;
+}

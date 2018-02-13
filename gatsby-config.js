@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "Stephen Chen · UI/UX & Product Designer",
+    author: "Stephen Chen",
   },
   plugins: [
     {
@@ -43,5 +43,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-less`,
   ],
 }

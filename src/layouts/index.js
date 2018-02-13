@@ -1,25 +1,20 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import './reset.css'
+import './index.less'
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
     let header
-    if (location.pathname === '/') {
+    if (location.pathname != '/') {
       header = (
-        <h1>
-          <Link to={'/'} >
-            Gatsby Starter Blog
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
+        <div>
           <Link to={'/'}>
-            Gatsby Starter Blog
+            Home
           </Link>
-        </h3>
+        </div>
       )
     }
     return (

@@ -3,7 +3,9 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
-import Bio from '../components/Bio'
+import Hero from '../components/Hero'
+
+import styles from './index.module.less'
 
 class BlogIndex extends React.Component {
   render() {
@@ -13,23 +15,33 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
-        <Bio />
-        {posts.map(post => {
-          if (post.node.path !== '/404/') {
-            const title = get(post, 'node.frontmatter.title') || post.node.path
-            return (
-              <div key={post.node.frontmatter.path}>
-                <h3>
-                  <Link to={post.node.frontmatter.path} >
-                    {post.node.frontmatter.title}
-                  </Link>
-                </h3>
-                <small>{post.node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
-              </div>
-            )
-          }
-        })}
+        <Hero />
+        <div className={styles.portfolioOuter}>
+          <div className={styles.portfolioInner}>
+            {posts.map(post => {
+              if (post.node.path != '/404/') {
+                const title = get(post, 'node.frontmatter.title') || post.node.path
+                return (
+                  <div 
+                    className={styles.projectCard}
+                    key={post.node.frontmatter.path}
+                  >
+                    <Link to={post.node.frontmatter.path}>
+                      <div className={styles.projectThumb}>
+
+                      </div>
+                      <div className={styles.projectInfo}>
+                        <h2>{post.node.frontmatter.title}</h2>
+                        <small>{post.node.frontmatter.date}</small>
+                        <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+                      </div>
+                    </Link>
+                  </div>
+                )
+              }
+            })}
+          </div>
+        </div>
       </div>
     )
   }

@@ -1,0 +1,50 @@
+@import '../components/_var';
+
+.heroOuter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 540px;
+    background: @accent-light;
+}
+.heroInner {
+    flex: 1;
+    display: flex;
+    max-width: @page-max-width;
+    padding: 0 @page-padding-lr;
+
+}
+.heroSection {
+    flex: 1;
+    display: flex;
+
+    &.profilePic {
+        align-items: flex-end;
+        justify-content: center;
+
+        >img {
+            max-width: 380px;
+        }
+    }
+    &.profileText {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        >h1 {
+            margin-bottom: 24px;
+            font-size: unit(pow(@font-scale, 4), em);
+            color: @accent;
+        }
+        >p {
+            max-width: 400px;
+            font-size: unit(pow(@font-scale, 2), em);
+            line-height: 1.5em;
+            color: @accent-alt;
+        }
+
+        strong {
+            color: @accent;
+        }
+    }
+}
