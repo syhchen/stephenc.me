@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Hero from '../components/Hero'
+import Footer from '../components/Footer'
 
 import styles from './index.module.less'
 
@@ -43,6 +44,7 @@ class BlogIndex extends React.Component {
             })}
           </div>
         </div>
+        <Footer />
       </div>
     )
   }
