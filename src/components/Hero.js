@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Hero.module.less'
 
-import profilePic from './me@2x.png'
+import profilePic from './img/me@2x.png'
 
 class Hero extends React.Component {
   render() {
