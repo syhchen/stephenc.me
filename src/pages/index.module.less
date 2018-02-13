@@ -1,23 +1,28 @@
 @import '../components/_var';
 
+@card-spacing:     12px;
+@card-aspect:      4/3;
+
 .portfolioOuter {
     position: relative;
     top: -60px;
     width: 100%;
-    max-width: @page-max-width;
+    max-width: @page-max-width + (@card-spacing * 2);
     margin: 0 auto;
-    padding: 6px 12px;
     background: white;
 }
 .portfolioInner {
     display: flex;
-    margin: 0 -6px;
+    flex-wrap: wrap;
+    margin: 0 (@card-spacing / 2);
+    padding: (@card-spacing / 2) 0;
 }
 
 .projectCard {
     flex: 1 0;
-    margin: 6px;
-    box-shadow: 0px 2px 20px rgba(0,0,0,0.12);
+    min-width: 340px;
+    margin: @card-spacing / 2;
+    box-shadow: 0px 2px 16px rgba(0,0,0,0.12);
     background: white;
 
     a {
@@ -26,8 +31,9 @@
     }
 }
 .projectThumb {
-    height: 280px;
-    background: white;
+    width: 100%;
+    padding-bottom: percentage(1 / @card-aspect); // 4/3 aspect ratio
+    background: lightgray;
 }
 .projectInfo {
     display: flex;
