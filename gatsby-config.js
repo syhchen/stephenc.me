@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Stephen Chen · UI/UX & Product Designer",
+    title: "Stephen Chen | Product & UI/UX Designer",
     author: "Stephen Chen",
+    rssFeedDescription: "Stephen Chen, Product & UI/UX Designer",
   },
   plugins: [
     {

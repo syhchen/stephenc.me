@@ -33,9 +33,7 @@ class BlogIndex extends React.Component {
                       </div>
                       <div className={styles.projectInfo}>
                         <h2>{post.node.frontmatter.title}</h2>
-                        <p>Filler text.</p>
-                        {/* <small>{post.node.frontmatter.date}</small>
-                        <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} /> */}
+                        <p>{post.node.frontmatter.blurb}</p>
                       </div>
                     </Link>
                   </div>
@@ -63,16 +61,16 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___sortPriority], order: DESC }) {
       edges {
         node {
           excerpt
           frontmatter {
             path
-            date(formatString: "DD MMMM, YYYY")
           }
           frontmatter {
             title
+            blurb
           }
         }
       }
