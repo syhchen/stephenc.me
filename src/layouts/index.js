@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import './reset.css'
-import './index.less'
+import '../components/reset.css'
+import '../components/index.less'
 
 class Template extends React.Component {
   render() {

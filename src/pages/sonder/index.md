@@ -1,6 +1,6 @@
 ---
 title: Sonder
-blurb: A platform for positivity on the internet
+blurb: A platform for positivity
 path: "/sonder/"
 thumbnail: "./sonder.png"
 sortPriority: 2

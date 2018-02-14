@@ -5,10 +5,10 @@
 
 .portfolioOuter {
     position: relative;
-    top: -60px;
     width: 100%;
     max-width: @page-max-width + (@card-spacing * 2);
     margin: 0 auto;
+    margin-top: -60px;
     background: white;
 }
 .portfolioInner {
@@ -20,7 +20,7 @@
 
 .projectCard {
     flex: 1 0;
-    min-width: 350px;
+    min-width: 340px;
     margin: @card-spacing / 2;
     box-shadow: 0px 2px 16px rgba(0,0,0,0.12);
     background: white;
@@ -53,5 +53,11 @@
     >p {
         font-size: 1em;
         color: @text-alt;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .portfolioOuter {
+        margin-top: -40px;
     }
 }

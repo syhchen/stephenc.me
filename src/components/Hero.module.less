@@ -12,6 +12,7 @@
     display: flex;
     max-width: @page-max-width;
     padding: 0 @page-padding-lr;
+    position: relative;
 
 }
 .heroSection {
@@ -46,6 +47,35 @@
 
         strong {
             color: @accent;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .heroOuter {
+        height: 440px;
+        font-size: @font-size * pow(@font-scale, -1);
+    }
+    .heroSection.profilePic >img {
+        max-width: 320px;
+    }
+    .heroSection.profileText >p {
+        max-width: 320px;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .heroOuter {
+        height: 360px;
+        overflow: hidden;
+    }
+    .heroSection.profilePic {
+        justify-content: flex-end;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: -20px;
+
+        >img {
+            max-width: 300px;
+            opacity: 0.15;
         }
     }
 }
