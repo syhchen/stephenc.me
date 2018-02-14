@@ -20,14 +20,15 @@ class BlogIndex extends React.Component {
         <div className={styles.portfolioOuter}>
           <div className={styles.portfolioInner}>
             {posts.map(post => {
-              if (post.node.path != '/404/') {
+              if (post.node.path != '/404/' && !post.node.frontmatter.hide) {
                 const title = get(post, 'node.frontmatter.title') || post.node.path
                 return (
                   <div 
                     className={styles.projectCard}
                     key={post.node.frontmatter.path}
                   >
-                    <Link to={post.node.frontmatter.path}>
+
+                    {/* <Link to={post.node.frontmatter.path}>
                       <div
                         className={styles.projectThumb}
                         style={{ backgroundImage: `url(${post.node.frontmatter.thumbnail.childImageSharp.responsiveSizes.src})` }}
@@ -36,7 +37,19 @@ class BlogIndex extends React.Component {
                         <h2>{post.node.frontmatter.title}</h2>
                         <p>{post.node.frontmatter.blurb}</p>
                       </div>
-                    </Link>
+                    </Link> */}
+
+                    <a href={post.node.frontmatter.externalCaseUrl} target="_blank">
+                      <div
+                        className={styles.projectThumb}
+                        style={{ backgroundImage: `url(${post.node.frontmatter.thumbnail.childImageSharp.responsiveSizes.src})` }}
+                      />
+                      <div className={styles.projectInfo}>
+                        <h2>{post.node.frontmatter.title}</h2>
+                        <p>{post.node.frontmatter.blurb}</p>
+                      </div>
+                    </a>
+
                   </div>
                 )
               }
@@ -67,11 +80,13 @@ export const pageQuery = graphql`
         node {
           excerpt
           frontmatter {
-            path
-          }
-          frontmatter {
             title
             blurb
+            path
+            externalCaseUrl
+            hide
+          }
+          frontmatter {
             thumbnail {
               childImageSharp {
                 responsiveSizes(maxWidth: 400) {
