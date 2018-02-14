@@ -1,6 +1,9 @@
 ---
 title: TechLA
-blurb: Internships at Los Angeles startups
+blurb: Internships at startups in Los Angeles
 path: "/techla/"
-sortPriority: 0
+thumbnail: "./techla.png"
+sortPriority: 1
 ---
+
+![TechLA](./techla.png)

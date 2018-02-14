@@ -28,9 +28,10 @@ class BlogIndex extends React.Component {
                     key={post.node.frontmatter.path}
                   >
                     <Link to={post.node.frontmatter.path}>
-                      <div className={styles.projectThumb}>
-
-                      </div>
+                      <div
+                        className={styles.projectThumb}
+                        style={{ backgroundImage: `url(${post.node.frontmatter.thumbnail.childImageSharp.responsiveSizes.src})` }}
+                      />
                       <div className={styles.projectInfo}>
                         <h2>{post.node.frontmatter.title}</h2>
                         <p>{post.node.frontmatter.blurb}</p>
@@ -71,6 +72,15 @@ export const pageQuery = graphql`
           frontmatter {
             title
             blurb
+            thumbnail {
+              childImageSharp {
+                responsiveSizes(maxWidth: 400) {
+                  src
+                  srcSet
+                  sizes
+                }
+              }
+            }
           }
         }
       }

@@ -2,7 +2,8 @@
 title: Sonder
 blurb: A platform for positivity on the internet
 path: "/sonder/"
-sortPriority: 1
+thumbnail: "./sonder.png"
+sortPriority: 2
 ---
 
-![Chinese Salty Egg](./salty_egg.jpg)
+![Sonder](./sonder.png)

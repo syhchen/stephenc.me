@@ -45,5 +45,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-less`,
+    `gatsby-plugin-sharp`,
   ],
 }
