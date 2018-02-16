@@ -26,3 +26,32 @@
 @font-stack:       'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @font-size:        16px;
 @font-scale:       1.25;
+
+/* MIXINS */
+
+.font-size-em(@step) {
+  font-size: unit(pow(@font-scale, @step), em);
+}
+.font-size-px(@step) {
+  font-size: @font-size * pow(@font-scale, @step);
+}
+
+// @USAGE: apply to a child of a flex container with flex-wrap: wrap; to keep all children the same width
+.flex-wrap-fix(@flex-basis, @max-viewport-width: @page-max-width) {
+  flex-grow: 1;
+  flex-basis: @flex-basis;
+  max-width: 100%;
+
+  .flex-wrap-fix-loop(@flex-basis, @max-viewport-width, 0, 1);
+}
+
+.flex-wrap-fix-loop(@flex-basis, @max-viewport-width, @breakpoint-width, @multiplier) when (@max-viewport-width > (@breakpoint-width + @flex-basis)) {
+  @multiplier-next: @multiplier + 1;
+  @breakpoint-width-next: unit((@flex-basis * unit(@multiplier-next, px)), px); // explicitly set units to make sure math works as intented
+
+  @media only screen and (min-width: @breakpoint-width-next) {
+    max-width: percentage(1 / @multiplier-next);
+  }
+
+  .flex-wrap-fix-loop(@flex-basis, @max-viewport-width, @breakpoint-width-next, @multiplier-next);
+}
