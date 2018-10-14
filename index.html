@@ -5,6 +5,7 @@
     <meta name="description" content="This is the website of Stephen Chen, a product designer and developer based in New York City.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#ff6666">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond:500|Poppins:400,600">
     <style>
         body {
             display: flex;
@@ -12,24 +13,45 @@
             justify-content: center;
 
             margin: 0; padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        hr {
+            display: block;
+            box-sizing: border-box;
+
+            height: 22px;
+            margin: 0;
+            border: none;
+            border-bottom: 1px dashed #ccc;
+            background: none;
         }
         h1 {
-            margin: 0 0 23px;
-            font-family: sans-serif;
+            margin: 0 0 22px;
+            font-family: 'Poppins', sans-serif;
             font-size: 40px;
+            font-weight: 600;
             line-height: 60px;
             color: #ff6666;
         }
         p {
             margin: 0 0 20px;
-            font-family: serif;
+            font-family: 'EB Garamond', serif;
             font-size: 20px;
+            font-weight: 500;
             line-height: 30px;
-            color: #222;
+            color: #333;
+        }
+        a {
+            text-decoration-skip: ink;
+            color: inherit;
+        }
+        a:hover {
+            color: #ff6666;
         }
         .container {
-            width: 100%; max-width: 600px;
-            padding: 16px 20px 20px;
+            width: 100%; max-width: 560px;
+            padding: 36px 20px 60px;
         }
         ul.links {
             display: flex;
@@ -39,33 +61,33 @@
             list-style: none;
         }
         ul.links>li {
-            margin-right: 20px; padding-top: 7px;
+            margin-right: 20px; padding-top: 26px;
             font-family: sans-serif;
             font-size: 15px;
-            color: #999;
+            color: #777;
         }
         ul.links a {
+            font-weight: 400;
             text-decoration: none;
-            color: inherit;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Hi, I&#8217;m Stephen.</h1>
-        <p>I&#8217;m a product designer and developer based in New York City.</p>
-        <p>Previously, I&#8217;ve worked on instant 3D avatars at Pinscreen, localization tools for PlayStation teams at Sony, and
-        web and mobile apps for various clients as a freelancer.</p>
-        <p>I love to write and perform original music, some of which you can find on my SoundCloud. I also take photos -
-        occasionally, I&#8217;ll post my work and chronicle my own adventures over on Instagram.</p>
-        <p>Want to connect? Say hello via email or find me on Twitter!</p>
+        <p>I&#8217;m a <a href="//www.behance.net/SCDevy">product designer</a> and <a href="//github.com/scdevy">developer</a> based in New York City.</p>
+        <p>Previously, I&#8217;ve worked on instant 3D avatars at <a href="//pinscreen.com/">Pinscreen</a>, localization tools for <a href="//www.playstation.com/en-us/">PlayStation</a> teams at Sony, and web and mobile apps for various clients as a freelancer.</p>
+        <p>I love to write and perform original music, some of which you can find on my <a href="//soundcloud.com/stephenchenmusic/sets/my-recordings">SoundCloud</a>. I also take photos &mdash; occasionally, I&#8217;ll post my work and chronicle my own adventures over on <a href="//www.instagram.com/scdevy">Instagram</a>.</p>
+        <p>Want to connect? Say hello via <a href="mailto:hello@stephenc.me">email</a> or <a href="//twitter.com/scdevy">Twitter</a>!</p>
+        <hr />
         <ul class="links">
             <li><a href="//www.behance.net/SCDevy">Behance</a></li>
             <li><a href="//github.com/scdevy">GitHub</a></li>
-            <!-- <li><a shref="//www.quora.com/profile/Stephen-Chen-36">Quora</a></li> -->
-            <li><a href="//soundcloud.com/stephenchenmusic/sets/my-recordings">SoundCloud</a></li>
-            <li><a href="//www.instagram.com/scdevy">Instagram</a></li>
-            <li><a href="//twitter.com/scdevy">Twitter</a></li>
+            <li><a href="//www.linkedin.com/in/stephenyhchen">LinkedIn</a></li>
+            <!-- <li><a href="//www.quora.com/profile/Stephen-Chen-36">Quora</a></li> -->
+            <!-- <li><a href="//soundcloud.com/stephenchenmusic/sets/my-recordings">SoundCloud</a></li> -->
+            <!-- <li><a href="//www.instagram.com/scdevy">Instagram</a></li> -->
+            <!-- <li><a href="//twitter.com/scdevy">Twitter</a></li> -->
         </ul>
     </div>
 
